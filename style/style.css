@@ -1,0 +1,80 @@
+::-webkit-scrollbar{
+  display: none;
+  width: 0px;
+}
+
+nav{
+  background: inherit;
+}
+
+html{
+  overflow: scroll;
+}
+
+body{
+  background-image: url('../src/images/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+td, th{
+  vertical-align: middle !important;
+  text-align: center !important;
+  background: rgba(65, 65, 65, 0.37);
+  color: white;
+}
+
+p{
+  color: black; 
+}
+
+td{
+  background-color: white;
+  margin-top: 11vh;
+}
+
+#search{
+  width: 100vh;
+  margin-left : 20vh;
+  height : 7vh;
+}
+
+.appname{
+  color : black;
+  margin-top : -7vh;
+  margin-left : 11vh;
+}
+/*th{
+  /*background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;*/
+
+.input-group {
+  margin: 3.4vh;
+}
+
+svg{
+  height: 20vh;
+}
+
+td:first-of-type , td:first-of-type > div {
+  width: 34vh;
+  height: 29vh;
+}
+
+.fade-enter{
+  right: 110px;
+}
+.fade-enter-active{
+  right: 0px;
+  transition: 0.5s ease-in all;
+}
+.fade-leave{
+  right: 0px;
+}
+.fade-leave-active{
+  right: 110px;
+  transition: 0.5s ease-in all;
+}
