@@ -27,12 +27,13 @@ td, th{
 }
 
 p{
-  color: black; 
+  color: black;
 }
 
 td{
   background-color: white;
   margin-top: 11vh;
+  opacity: 0.7;
 }
 
 #search{

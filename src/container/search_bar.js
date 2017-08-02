@@ -48,7 +48,7 @@ onFormSubmit(event){
         onChange={this.onInputChange}
         />
         <span className="input-group-btn" style={{marginLeft: '11px'}}>
-          <button role="button" type="submit" className="btn btn-secondary">Search</button>
+          <button role="button" type="submit" className="btn btn-outline-secondary">Search</button>
         </span>
       </form>
     </div>
