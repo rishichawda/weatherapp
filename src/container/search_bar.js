@@ -14,48 +14,30 @@ class SearchBar extends Component{
 
 
 onInputChange(event){
-  console.log(event.target.value);
   this.setState({
     term: event.target.value
   });
 }
 
 onFormSubmit(event){
-  event.preventDefault();
+    event.preventDefault();
+    var map = 
    this.props.fetchWeather(this.state.term);
    this.setState({ term : '' });
 }
 
   render(){
     return (
-      <nav className="navbar navbar-toggleable-md">
-  <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-  <a className="navbar-brand" href="#">
-    <img src="src/images/logo.jpg" style={{width : '52px' , height : '52px'}} className="img img-fluid"/>
-    <h2 className="appname"> Weather App </h2>
-  </a>
 
-  <div className="collapse navbar-collapse" id="navbarSupportedContent">
-    <div className="navbar-nav mr-auto">
-      <form onSubmit={this.onFormSubmit} className="input-group">
-        <input
-        placeholder="Get a five day forecast for a city."
-        id = "search"
-        className="form-control"
-        value={this.state.term}
-        onChange={this.onInputChange}
-        />
-        <span className="input-group-btn" style={{marginLeft: '11px'}}>
-          <button role="button" type="submit" className="btn btn-outline-secondary">Search</button>
-        </span>
-      </form>
-    </div>
-    <div className="form-inline my-2 my-lg-0">
-    </div>
-  </div>
-</nav>
+      <nav className="navbar navbar-light">
+        <a className="navbar-brand text-white">
+          Weather App 
+        </a>
+        <form className="form-inline" onSubmit={this.onFormSubmit}>
+          <input placeholder="Get a five day forecast for a city." id = "search" className="form-control mr-2" value={this.state.term} onChange={this.onInputChange} required/>
+          <button type="submit" className="btn btn-outline-light my-2 my-0">Search</button>
+        </form>
+      </nav>
     );
   }
 }

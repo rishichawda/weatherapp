@@ -1,0 +1,54 @@
+::-webkit-scrollbar{
+    display: none;
+    width: 0px;
+  }
+  
+  nav{
+    background: transparent;
+  }
+  
+  body{
+    background-image: url('./images/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    font-size: 1rem;
+  }
+  
+#root > div > div > div > div, #root > div > div > div > div:nth-child(4) > div > div{
+  width: 100%;
+  height: 11vw;
+}
+
+#map,#root > div > div > div > div:nth-child(3) > div.row.w-100.ml-3.text-white > div > div {
+  height: 34vw;
+}
+
+svg {
+  background-color: rgba(255,255,255,0.61);
+}
+
+#root > div > div > div {
+  background-color:rgba(0,0,0,0.25);
+  min-height: 65vw;
+  border-radius: 1.1vw;
+}
+
+#root > div > div > div > p{
+  max-height: fit-content;
+  border-top-left-radius: 1.1vw;
+  border-top-right-radius: 1.1vw;
+}
+
+#root > div > div > div > div.row.w-100.m-0.text-white {
+  min-height: fit-content;
+}
+
+#root > div > div > div > div.alert-warning.w-100.text-center.p-1{
+  max-height: fit-content;
+  padding: 0.25rem;
+}
+#root > div > div > div > div:nth-child(3) {
+  min-height: fit-content;
+}
